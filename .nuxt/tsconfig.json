@@ -82,6 +82,8 @@
   "include": [
     "./nuxt.d.ts",
     "../**/*",
+    "../node_modules/@vueuse/nuxt/runtime",
+    "../node_modules/@unocss/nuxt/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -89,6 +91,8 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/@vueuse/nuxt/runtime/server",
+    "../node_modules/@unocss/nuxt/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

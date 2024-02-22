@@ -7,7 +7,7 @@ export const useFetchWebtoons: useFetchType = (path, options = {}) => {
     const config = useRuntimeConfig()
 
     // modify options as needed
-    options.baseURL = "http://130.61.158.244:8091"
+    options.baseURL = "http://164.68.103.54:8091"
     options.headers = {}
 
     options.onResponseError = ({request, response, options}) => {

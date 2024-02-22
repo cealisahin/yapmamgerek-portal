@@ -1,1 +1,0 @@
-import{_ as e,v as t,t as s,x as a}from"./entry.8b03e501.js";const c={},n=a("span",null," detay sayfasi",-1),o=[n];function _(r,d){return s(),t("div",null,o)}const i=e(c,[["render",_]]);export{i as default};
