@@ -5,23 +5,30 @@ const props = defineProps<{
   query: QueryItem
 }>()
 
-const item = await listMedia(props.query.type, props.query.query, 1)
-</script>
+const item = await listAttraction('last/3')
+console.log('val :',item);
 
+</script>
 <template>
   <CarouselBase>
     <template #title>
-      {{ (query.title) }}
+      {{ query.title }}
+    </template>
+    <template #more>
+      <NuxtLink :to="`/${props.query.type}`" n-link>
+        {{ 'Explore more' }}
+      </NuxtLink>
     </template>
     <MediaCard
-        v-for="i of item?.results || []"
-        :key="i.id"
+        v-for="i of item  || []"
+        :key="i.name"
         :item="i"
         :type="props.query.type"
         flex-1 w-40 md:w-60
     />
   </CarouselBase>
 </template>
+
 
 <style scoped>
 

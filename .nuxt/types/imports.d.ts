@@ -46,11 +46,9 @@ declare global {
   const effect: typeof import('../../node_modules/vue')['effect']
   const effectScope: typeof import('../../node_modules/vue')['effectScope']
   const extendRef: typeof import('../../node_modules/@vueuse/core')['extendRef']
-  const fetchTMDB: typeof import('../../composables/attraction')['fetchTMDB']
   const getAppManifest: typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getAppManifest']
   const getCurrentInstance: typeof import('../../node_modules/vue')['getCurrentInstance']
   const getCurrentScope: typeof import('../../node_modules/vue')['getCurrentScope']
-  const getMedia: typeof import('../../composables/attraction')['getMedia']
   const getRouteRules: typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getRouteRules']
   const h: typeof import('../../node_modules/vue')['h']
   const hasInjectionContext: typeof import('../../node_modules/vue')['hasInjectionContext']
@@ -68,7 +66,7 @@ declare global {
   const isShallow: typeof import('../../node_modules/vue')['isShallow']
   const isVue2: typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue2']
   const isVue3: typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue3']
-  const listMedia: typeof import('../../composables/attraction')['listMedia']
+  const listAttraction: typeof import('../../composables/attraction')['listAttraction']
   const loadPayload: typeof import('../../node_modules/nuxt/dist/app/composables/payload')['loadPayload']
   const makeDestructurable: typeof import('../../node_modules/@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('../../node_modules/vue')['markRaw']
@@ -411,11 +409,9 @@ declare module 'vue' {
     readonly effect: UnwrapRef<typeof import('../../node_modules/vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('../../node_modules/vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['extendRef']>
-    readonly fetchTMDB: UnwrapRef<typeof import('../../composables/attraction')['fetchTMDB']>
     readonly getAppManifest: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getAppManifest']>
     readonly getCurrentInstance: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentScope']>
-    readonly getMedia: UnwrapRef<typeof import('../../composables/attraction')['getMedia']>
     readonly getRouteRules: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getRouteRules']>
     readonly h: UnwrapRef<typeof import('../../node_modules/vue')['h']>
     readonly hasInjectionContext: UnwrapRef<typeof import('../../node_modules/vue')['hasInjectionContext']>
@@ -433,7 +429,7 @@ declare module 'vue' {
     readonly isShallow: UnwrapRef<typeof import('../../node_modules/vue')['isShallow']>
     readonly isVue2: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue2']>
     readonly isVue3: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue3']>
-    readonly listMedia: UnwrapRef<typeof import('../../composables/attraction')['listMedia']>
+    readonly listAttraction: UnwrapRef<typeof import('../../composables/attraction')['listAttraction']>
     readonly loadPayload: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/payload')['loadPayload']>
     readonly makeDestructurable: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('../../node_modules/vue')['markRaw']>
@@ -769,11 +765,9 @@ declare module '@vue/runtime-core' {
     readonly effect: UnwrapRef<typeof import('../../node_modules/vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('../../node_modules/vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['extendRef']>
-    readonly fetchTMDB: UnwrapRef<typeof import('../../composables/attraction')['fetchTMDB']>
     readonly getAppManifest: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getAppManifest']>
     readonly getCurrentInstance: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentScope']>
-    readonly getMedia: UnwrapRef<typeof import('../../composables/attraction')['getMedia']>
     readonly getRouteRules: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getRouteRules']>
     readonly h: UnwrapRef<typeof import('../../node_modules/vue')['h']>
     readonly hasInjectionContext: UnwrapRef<typeof import('../../node_modules/vue')['hasInjectionContext']>
@@ -791,7 +785,7 @@ declare module '@vue/runtime-core' {
     readonly isShallow: UnwrapRef<typeof import('../../node_modules/vue')['isShallow']>
     readonly isVue2: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue2']>
     readonly isVue3: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/compat/vue-demi')['isVue3']>
-    readonly listMedia: UnwrapRef<typeof import('../../composables/attraction')['listMedia']>
+    readonly listAttraction: UnwrapRef<typeof import('../../composables/attraction')['listAttraction']>
     readonly loadPayload: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/payload')['loadPayload']>
     readonly makeDestructurable: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('../../node_modules/vue')['markRaw']>

@@ -5,7 +5,7 @@ type useFetchType = typeof useFetch
 // wrap useFetch with configuration needed to talk to our API
 export const useFetchWebtoons: useFetchType = (path, options = {}) => {
     const config = useRuntimeConfig()
-
+   console.log('work:',path);
     // modify options as needed
     options.baseURL = "http://164.68.103.54:8091"
     options.headers = {}

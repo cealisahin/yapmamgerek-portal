@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import type { Media, MediaType } from '~/types'
+import type { MainAttraction, MediaType } from '~/types'
 
 defineProps<{
   type: MediaType
-  item: Media
+  item: MainAttraction
 }>()
 </script>
 
 <template>
-  <div mt-2>
-    {{ item.title || item.name }}
-    test
+  <NuxtLink
+      :to="`/${item.name}`" pb2
+  >
+  <div>
+    {{ item.title }}
   </div>
+  </NuxtLink>
 </template>
 

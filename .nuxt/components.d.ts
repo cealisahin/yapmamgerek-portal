@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'CarouselAutoQuery': typeof import("../components/carousel/AutoQuery.vue")['default']
     'CarouselBase': typeof import("../components/carousel/Base.vue")['default']
+    'CarouselItems': typeof import("../components/carousel/Items.vue")['default']
     'MediaCard': typeof import("../components/media/Card.vue")['default']
     'UnoIcon': typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -27,6 +28,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCarouselAutoQuery': typeof import("../components/carousel/AutoQuery.vue")['default']
     'LazyCarouselBase': typeof import("../components/carousel/Base.vue")['default']
+    'LazyCarouselItems': typeof import("../components/carousel/Items.vue")['default']
     'LazyMediaCard': typeof import("../components/media/Card.vue")['default']
     'LazyUnoIcon': typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -54,6 +56,7 @@ declare module 'vue' {
 
 export const CarouselAutoQuery: typeof import("../components/carousel/AutoQuery.vue")['default']
 export const CarouselBase: typeof import("../components/carousel/Base.vue")['default']
+export const CarouselItems: typeof import("../components/carousel/Items.vue")['default']
 export const MediaCard: typeof import("../components/media/Card.vue")['default']
 export const UnoIcon: typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -78,6 +81,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCarouselAutoQuery: typeof import("../components/carousel/AutoQuery.vue")['default']
 export const LazyCarouselBase: typeof import("../components/carousel/Base.vue")['default']
+export const LazyCarouselItems: typeof import("../components/carousel/Items.vue")['default']
 export const LazyMediaCard: typeof import("../components/media/Card.vue")['default']
 export const LazyUnoIcon: typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
