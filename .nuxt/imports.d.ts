@@ -25,5 +25,6 @@ export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerS
 export { listAttraction } from '../composables/attraction';
 export { useRouteParam } from '../composables/nuxt';
 export { useFetchWebtoons } from '../composables/useFetchWebtoons';
+export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

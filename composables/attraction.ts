@@ -1,7 +1,7 @@
 import { LRUCache } from 'lru-cache'
 import { hash as ohash } from 'ohash'
 
-const apiBaseUrl = "http://164.68.103.54:8091"
+const apiBaseUrl = "http://100.72.10.62:8091";
 
 const promiseCache = new LRUCache<string, any>({
     max: 500,

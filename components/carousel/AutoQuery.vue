@@ -5,8 +5,7 @@ const props = defineProps<{
   query: QueryItem
 }>()
 
-const item = await listAttraction('last/3')
-console.log('val :',item);
+const item = await listAttraction(props.query.type +'/10')
 
 </script>
 <template>

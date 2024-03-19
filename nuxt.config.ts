@@ -3,13 +3,10 @@ import process from 'node:process'
 const isDev = process.env.NODE_ENV === 'development'
 
 // const apiBaseUrl = 'http://localhost:3001'
-const apiBaseUrl = "http://164.68.103.54"
+const apiBaseUrl = "http://100.72.10.62"
 
 export default defineNuxtConfig({
-  modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-  ],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', "@nuxt/image"],
   experimental: {
     inlineSSRStyles: false,
     viewTransition: true,

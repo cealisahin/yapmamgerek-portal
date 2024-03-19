@@ -223,6 +223,7 @@ declare global {
   const useHeadSafe: typeof import('../../node_modules/@unhead/vue')['useHeadSafe']
   const useHydration: typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']
   const useIdle: typeof import('../../node_modules/@vueuse/core')['useIdle']
+  const useImage: typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']
   const useInfiniteScroll: typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']
   const useIntersectionObserver: typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']
   const useInterval: typeof import('../../node_modules/@vueuse/core')['useInterval']
@@ -586,6 +587,7 @@ declare module 'vue' {
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHeadSafe']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useIdle: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIdle']>
+    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']>
     readonly useIntersectionObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']>
     readonly useInterval: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInterval']>
@@ -942,6 +944,7 @@ declare module '@vue/runtime-core' {
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHeadSafe']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useIdle: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIdle']>
+    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']>
     readonly useIntersectionObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']>
     readonly useInterval: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInterval']>
